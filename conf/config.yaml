@@ -1,0 +1,19 @@
+json_dir: data/json
+img_dir: data/jpg
+tabular_dir: data/csv
+
+json_path: dataset/label.csv
+img_path: dataset/img.db
+tabular_path: dataset/tabular.csv
+ds_path: dataset/dataset.csv
+
+pred_hour: 1
+time_limit: 1800
+distill_time_limit: 600
+run_type: test
+stage: ${run_type}
+
+model_path: output/${pred_hour}/distill.pkl
+train_result_path: output/${pred_hour}/train_result.pkl
+test_result_path: output/${pred_hour}/test_result.pkl
+report_path: result/result.xlsx
